@@ -73,6 +73,7 @@ namespace LZ65
                 }
                 idx += token.length;
             }
+            if(rawToken != null) tokens.Add(rawToken);
             tokens.Add(new LzToken(0, 0, EOS_FLAG));
 
             // Generate output bytes from Tokens
